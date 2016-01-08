@@ -1,7 +1,6 @@
 capture_uvc.py
 ====
-simple still image capture tool for UVC camera.
-
+Simple still image capture tool for UVC camera.
 
 Setup
 ----
@@ -11,9 +10,12 @@ Setup
 
 How to use:
 ----
-   $ v4l2-ctl --device=/dev/video0 --list-formats-ext
-   $ v4l2-ctl --device=/dev/video0 -c exposure_auto=1,exposure_auto_priority=0,exposure_absolute=160
-   $ ./capture_uvc.py -w 1920 -h 1080 -o capture.png
+UVC camera parameter settings...
+    $ v4l2-ctl --device=/dev/video0 --list-formats-ext
+    $ v4l2-ctl --device=/dev/video0 -c exposure_auto=1,exposure_auto_priority=0,exposure_absolute=160
+
+Capture still image.
+    $ ./capture_uvc.py -w 1920 -h 1080 -o capture.png
 
 Copyright and license
 ----
