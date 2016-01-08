@@ -20,7 +20,7 @@ UVC camera parameter settings...
 Capture still image.
 
     
-    $ ./capture_uvc.py -w 1920 -h 1080 -o capture.png
+    $ ./capture_uvc.py 1920x1080 capture.png
     
 
 Copyright and license
