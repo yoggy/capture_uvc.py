@@ -11,11 +11,17 @@ Setup
 How to use:
 ----
 UVC camera parameter settings...
+
+    
     $ v4l2-ctl --device=/dev/video0 --list-formats-ext
     $ v4l2-ctl --device=/dev/video0 -c exposure_auto=1,exposure_auto_priority=0,exposure_absolute=160
+    
 
 Capture still image.
+
+    
     $ ./capture_uvc.py -w 1920 -h 1080 -o capture.png
+    
 
 Copyright and license
 ----
